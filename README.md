@@ -1,4 +1,4 @@
-# Getting started with homemade PCB using Fiber Laser
+# Getting started with Fiber Laser DIY PCB
 
 - [Why fiberPCB?](#why-fiberPCB?)
 - [Useful Links](#useful-links)
@@ -8,8 +8,8 @@
 - [Detailed steps to make fiberPCB](#detailed-steps-to-make-fiberPCB)
 
 ## Why fiberPCB?
-* Chemical etching : Cheap but need skills for small patterns. Harmful to the environment.
-* CNC milling : Time and cares are proportionate to the complexity of the pattern.
+* Chemical etching : Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
+* CNC milling : Required time and cares are proportionate to the complexity of the pattern.
 * Commercial PCB laser machine : Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
   
 ## Useful Links
@@ -23,6 +23,7 @@
 * [FR-4](https://en.wikipedia.org/wiki/FR-4)
 * Laminator
 * Dry film
+  * I first thought that Kapton film can replace it but that would be wrong.
  
 ## How to choose fiber laser
  * Stronger/Wider is not always better
