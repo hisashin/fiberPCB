@@ -9,12 +9,14 @@
 
 ## Why fiberPCB?
 * Chemical etching
-  * Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
+ * Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
 * CNC milling
-  * I had [USD2300 one designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
-  * You must replace end mills not to cut contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
+ * I had [USD2300 one designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
+ * You must replace end mills not to cut contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
 * Commercial PCB laser machine.
-  * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
+ * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
+* CO2 Laser
+ * Cannot etch metal
   
 ## Useful References
 * [Making fine pitch PCB prototypes with fiber laser](https://www.kurokesu.com/main/2021/01/07/making-fine-pitch-pcb-prototypes-with-fiber-laser/?fbclid=IwAR3_8MipkpVS9d9DjpUQ1I7AqjXdvbW7uQoy86yiT56GoPLZ7w0Zegjyjy0)
