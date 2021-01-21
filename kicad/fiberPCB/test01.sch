@@ -19,7 +19,7 @@ U 1 1 60093B36
 P 3250 2150
 F 0 "J1" H 3358 2331 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 3358 2240 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3250 2150 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 3250 2150 50  0001 C CNN
 F 3 "~" H 3250 2150 50  0001 C CNN
 	1    3250 2150
 	1    0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 600940F3
 P 4000 2150
 F 0 "J5" H 3972 2174 50  0000 R CNN
 F 1 "Conn_01x01_Male" H 3972 2083 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4000 2150 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 4000 2150 50  0001 C CNN
 F 3 "~" H 4000 2150 50  0001 C CNN
 	1    4000 2150
 	-1   0    0    -1  
@@ -43,7 +43,7 @@ U 1 1 60095C5E
 P 3250 2400
 F 0 "J2" H 3358 2581 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 3358 2490 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3250 2400 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 3250 2400 50  0001 C CNN
 F 3 "~" H 3250 2400 50  0001 C CNN
 	1    3250 2400
 	1    0    0    -1  
@@ -54,7 +54,7 @@ U 1 1 60095C68
 P 4000 2400
 F 0 "J6" H 3972 2424 50  0000 R CNN
 F 1 "Conn_01x01_Male" H 3972 2333 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4000 2400 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 4000 2400 50  0001 C CNN
 F 3 "~" H 4000 2400 50  0001 C CNN
 	1    4000 2400
 	-1   0    0    -1  
@@ -67,7 +67,7 @@ U 1 1 60096F0E
 P 3250 2650
 F 0 "J3" H 3358 2831 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 3358 2740 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3250 2650 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 3250 2650 50  0001 C CNN
 F 3 "~" H 3250 2650 50  0001 C CNN
 	1    3250 2650
 	1    0    0    -1  
@@ -78,7 +78,7 @@ U 1 1 60096F18
 P 4000 2650
 F 0 "J7" H 3972 2674 50  0000 R CNN
 F 1 "Conn_01x01_Male" H 3972 2583 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4000 2650 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 4000 2650 50  0001 C CNN
 F 3 "~" H 4000 2650 50  0001 C CNN
 	1    4000 2650
 	-1   0    0    -1  
@@ -91,7 +91,7 @@ U 1 1 60097B8C
 P 3250 2900
 F 0 "J4" H 3358 3081 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 3358 2990 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 3250 2900 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 3250 2900 50  0001 C CNN
 F 3 "~" H 3250 2900 50  0001 C CNN
 	1    3250 2900
 	1    0    0    -1  
@@ -102,7 +102,7 @@ U 1 1 60097B96
 P 4000 2900
 F 0 "J8" H 3972 2924 50  0000 R CNN
 F 1 "Conn_01x01_Male" H 3972 2833 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4000 2900 50  0001 C CNN
+F 2 "fiberPCB:Checkpoint" H 4000 2900 50  0001 C CNN
 F 3 "~" H 4000 2900 50  0001 C CNN
 	1    4000 2900
 	-1   0    0    -1  
@@ -181,7 +181,7 @@ U 1 1 600C0F74
 P 4550 3750
 F 0 "PH_Pitch1.27" H 4658 3931 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 4658 3840 50  0000 C CNN
-F 2 "" H 4550 3750 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch1.27mm" H 4550 3750 50  0001 C CNN
 F 3 "~" H 4550 3750 50  0001 C CNN
 	1    4550 3750
 	1    0    0    -1  
@@ -192,7 +192,7 @@ U 1 1 600C18C8
 P 4550 4000
 F 0 "PH_Pitch2.00" H 4658 4181 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 4658 4090 50  0000 C CNN
-F 2 "" H 4550 4000 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.00mm" H 4550 4000 50  0001 C CNN
 F 3 "~" H 4550 4000 50  0001 C CNN
 	1    4550 4000
 	1    0    0    -1  
@@ -203,7 +203,7 @@ U 1 1 600C05F6
 P 4550 3500
 F 0 "PH_Pitch1.00" H 4658 3681 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 4658 3590 50  0000 C CNN
-F 2 "" H 4550 3500 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch1.00mm" H 4550 3500 50  0001 C CNN
 F 3 "~" H 4550 3500 50  0001 C CNN
 	1    4550 3500
 	1    0    0    -1  
@@ -269,7 +269,7 @@ U 1 1 600C2F8F
 P 4550 4250
 F 0 "PH_Pitch2.54" H 4658 4431 50  0000 C CNN
 F 1 "Conn_01x01_Male" H 4658 4340 50  0000 C CNN
-F 2 "" H 4550 4250 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x01_Pitch2.54mm" H 4550 4250 50  0001 C CNN
 F 3 "~" H 4550 4250 50  0001 C CNN
 	1    4550 4250
 	1    0    0    -1  
