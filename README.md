@@ -8,7 +8,9 @@
 - [Detailed steps to make fiberPCB](#detailed-steps-to-make-fiberPCB)
 
 ## Why fiberPCB?
-### OK let's compare it to other ways to make your own PCB.
+
+OK let's compare it to other ways to make your own PCB.
+
 * Online PCB service
   * Best way as long as you can wait for few days to weeks to be delivered.
   * Sometimes you cannot wait. In my case, PCB of [opensource Realtime PCR](https://github.com/hisashin/Ninja-qPCR) was so complex that I have to iterate orders to integrate after confirming each functions like LED control, photosensing, multiplexing and ADC.
