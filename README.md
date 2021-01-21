@@ -1,7 +1,7 @@
 # Getting started with fiberPCB, Fiber Laser DIY PCB
 
 - [Why fiberPCB?](#why-fiberPCB?)
-- [Useful Links](#useful-links)
+- [Useful References](#useful-references)
 - [All required tools and expendables](#all-required-tools-and-expendables)
 - [How to choose fiber laser](#how-to-choose-fiber-laser)
 - [How to choose laminator](#how-to-choose-laminator)
@@ -16,7 +16,7 @@
 * Commercial PCB laser machine.
   * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
   
-## Useful Links
+## Useful References
 * [Making fine pitch PCB prototypes with fiber laser](https://www.kurokesu.com/main/2021/01/07/making-fine-pitch-pcb-prototypes-with-fiber-laser/?fbclid=IwAR3_8MipkpVS9d9DjpUQ1I7AqjXdvbW7uQoy86yiT56GoPLZ7w0Zegjyjy0)
 * [Youtubes](https://www.youtube.com/playlist?list=PLIcr1mnww28Doh5sBvfblVOn0Wxk1qtYr)
  
