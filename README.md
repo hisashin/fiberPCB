@@ -18,7 +18,7 @@
   * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
 * CO2 Laser
   * Cannot etch metal without spraying black.
-  * Focul diameter is 100 times larger and its edge is not clear for small pitches.
+  * Focal diameter is 100 times larger and its edge is not clear for small pitches.
   
 ## Useful References
 * [Making fine pitch PCB prototypes with fiber laser](https://www.kurokesu.com/main/2021/01/07/making-fine-pitch-pcb-prototypes-with-fiber-laser/?fbclid=IwAR3_8MipkpVS9d9DjpUQ1I7AqjXdvbW7uQoy86yiT56GoPLZ7w0Zegjyjy0)
