@@ -1,7 +1,7 @@
 (export (version D)
   (design
-    (source /Users/shingo/github/fiberPCB/kicad/fiberPCB/fiberPCB.sch)
-    (date "2021 January 22, Friday 06:12:25")
+    (source /Users/shingo/github/fiberPCB/kicad/fiberPCB/test01.sch)
+    (date "2021 January 22, Friday 06:32:59")
     (tool "Eeschema (5.1.6-0-10_14)")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -9,7 +9,7 @@
         (company)
         (rev)
         (date)
-        (source fiberPCB.sch)
+        (source test01.sch)
         (comment (number 1) (value ""))
         (comment (number 2) (value ""))
         (comment (number 3) (value ""))
