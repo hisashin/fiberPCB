@@ -9,7 +9,7 @@
 
 ## Why fiberPCB?
 
-OK let's compare it to other ways to make your own PCB.
+OK let's compare it to other ways to get your own PCB.
 
 * Online PCB service
   * Best way as long as you can wait delivery for few days to weeks.
