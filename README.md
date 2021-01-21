@@ -58,6 +58,7 @@ My case in Tokyo Japan :
  * List confirmed to support 1.6mm thickness
 
 ## Detailed steps to make fiberPCB
+ * Design PCB as usual
  * Export Gerber Files
  * Convert files for EZCAD
  * Cut patterns
