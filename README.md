@@ -58,13 +58,14 @@ My case in Tokyo Japan :
  * List confirmed to support 1.6mm thickness
 
 ## Detailed steps to make fiberPCB
- * Design PCB as usual
- * Export Gerber Files
- * Convert files for EZCAD
- * Cut patterns
- * Print solder mask
- * Open pads
- * Cut holes and contor
+ 1. Design PCB as usual
+ ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb.png)
+ 1. Export Gerber Files
+ 1. Convert files for EZCAD
+ 1. Cut patterns
+ 1. Print solder mask
+ 1. Open pads
+ 1. Cut holes and contor
 
 
 
