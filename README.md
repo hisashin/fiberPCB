@@ -10,7 +10,7 @@
 ## Why fiberPCB?
 * Chemical etching
   * Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
-  * You have to drill holes and cut contors manually after etching.
+  * Need to drill all holes and cut contor manually after etching. Sometimes more than 100 times per board.
 * CNC milling
   * I had [USD2300 one designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
   * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
