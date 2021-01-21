@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name fiberPCB)(type Legacy)(uri ${KIPRJMOD}/fiberPCB.lib)(options "")(descr ""))
+  (lib (name 2021-01-21_03-42-59)(type Legacy)(uri "/Users/shingo/Desktop/ul_TC7WZ08FKLJCT (1)/KiCAD/2021-01-21_03-42-59/2021-01-21_03-42-59.lib")(options "")(descr ""))
+)
