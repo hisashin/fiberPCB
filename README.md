@@ -12,7 +12,7 @@
 OK let's compare it to other ways to make your own PCB.
 
 * Online PCB service
-  * Best way as long as you can wait for few days to weeks to be delivered.
+  * Best way as long as you can wait delivery for few days to weeks.
   * Sometimes you cannot wait. In my case, PCB of [opensource Realtime PCR](https://github.com/hisashin/Ninja-qPCR) was so complex that I have to iterate orders to integrate after confirming each functions like LED control, photosensing, multiplexing and ADC.
 * Chemical etching
   * Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
