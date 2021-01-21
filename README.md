@@ -1,4 +1,4 @@
-# Getting started with Fiber Laser DIY PCB
+# Getting started with fiberPCB, Fiber Laser DIY PCB
 
 - [Why fiberPCB?](#why-fiberPCB?)
 - [Useful Links](#useful-links)
@@ -33,7 +33,11 @@
 
 ## Detailed steps to make fiberPCB
  * Export Gerber Files
- * 
+ * Convert files for EZCAD
+ * Cut patterns
+ * Print solder mask
+ * Open pads
+ * Cut holes and contor
 
 
 
