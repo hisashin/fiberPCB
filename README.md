@@ -8,12 +8,16 @@
 - [Detailed steps to make fiberPCB](#detailed-steps-to-make-fiberPCB)
 
 ## Why fiberPCB?
+* Online PCB service
+  * Best way as long as you can wait for few days to weeks to be delivered.
+  * Sometimes you cannot wait. In my case, PCB of [opensource Realtime PCR](https://github.com/hisashin/Ninja-qPCR) was so complex that I have to iterate orders to integrate after confirming each functions like LED control, photosensing, multiplexing and ADC.
 * Chemical etching
   * Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
-  * Need to drill all holes and cut contor manually after etching. Sometimes more than 100 times per board.
+  * Need to drill all holes and cut contor manually after etching. There are more than 100 holes on my PCB.
 * CNC milling
-  * I had [USD2300 one designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
+  * I had [USD2300 CNC designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
   * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
+  * To cut small pitches, you cannot engrave deeply. If depth is not enough, small copper partcle may bridge the gap. I'm totally tired to care such problems.
 * Commercial PCB laser machine.
   * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
 * CO2 Laser
