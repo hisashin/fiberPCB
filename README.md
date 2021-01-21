@@ -35,15 +35,21 @@
   * I first thought that Kapton film can replace it but that would be wrong.
   * My case, [VANTIYAUS Zp00088(5m x 30cm)](https://www.amazon.co.jp/gp/product/B01NCS88LU/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1&fbclid=IwAR3ORckfPM1z7tKVWN8LTQ-CgsBqjpBLfcwR8V2A0jhZy2ZhwNkz0N1GbfY) for $19.15
 
-Item | Price | Shipping
------+-------+----------
-Fiber Laser | $1,837.44 | $249.81(DHL)
-FR-4(75x100mm) | $1.64 | $0
-Laminator | $10.64 | $11.12
-UV illuminator | $4.73 | $0
-Dry film(5m x 30cm) | $19.15 | $0
------+-------+----------
-Total | $1873.6 | $260.93
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+| Item                | Price         | Shipping     |
+| ------------------- |:-------------:| ------------:|
+| Fiber Laser         | $1,837.44     | $249.81(DHL) |
+| FR-4(75x100mm)      | $1.64         | $0           |
+| Laminator           | $10.64        | $11.12       |
+| UV illuminator      | $4.73         | $0           |
+| Dry film(5m x 30cm) | $19.15        | $0           |
+| ------------------- |:-------------:| ------------:|
+| Total               | $1873.6       | $260.93      |
 
 ## How to choose fiber laser
  * Stronger/Wider is not always better
