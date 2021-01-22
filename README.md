@@ -39,6 +39,10 @@ Let's compare fiberPCB with alternatives.
 * [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
   - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7 so I used [pip install](https://pypi.org/project/flatcam/#description).
+  ```
+  pip3.9 install flatcam
+  /usr/local/bin/flatcam
+  ```
 * [EZCAD](https://www.litlaser.com/ezcad), laser controller
 * Fiber Laser
 * Laminator
