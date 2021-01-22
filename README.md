@@ -36,10 +36,10 @@ Let's compare fiberPCB with alternatives.
  
 ## All required tools and expendables
 * Gerber Files (Free)
-* [FlatCAM](http://flatcam.org/), Gerver->CAM convet software (Free)
+* [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
   - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7 so I prefer to run [Docker](https://hub.docker.com/r/pci06/flatcam) on Linux instead.
-* [EZCAD](https://www.litlaser.com/ezcad), laser controller software (Free)
+* [EZCAD](https://www.litlaser.com/ezcad), laser controller
 * Fiber Laser
 * Laminator
 * UV illuminator
