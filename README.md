@@ -26,7 +26,7 @@ Let's compare fiberPCB with alternatives.
 * Commercial PCB laser machine.
   * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
 * CO2 Laser
-  * I don't have enough experiment with CO2 laser etching. Please send pull request if you can compare.
+  * I've never tried CO2 laser etching. Please send pull request if you can compare.
   * Cannot etch metal without spraying black.
   * Focal diameter is 100 times larger and edge might be unclear at small pitches.
   
