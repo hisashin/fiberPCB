@@ -38,10 +38,22 @@ Let's compare fiberPCB with alternatives.
 * Gerber Files (Free)
 * [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
-  - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7 so I used [pip install](https://pypi.org/project/flatcam/#description).
+  - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7. [Pip install](https://pypi.org/project/flatcam/#description) crush when saving projects. so I recommend to setup in [Docker Ubuntu Desktop](https://github.com/queeno/docker-ubuntu-desktop).
   ```
-  pip3.9 install flatcam
-  /usr/local/bin/flatcam
+  docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
+  // My case
+  docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
+  ```
+  Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
+  ```
+  apt-get update
+  apt-get -y install git sudo wget
+  //git clone https://bitbucket.org/jpcgt/flatcam <- latest one has different file structure
+  wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
+  unzip FlatCAM-8.5.zip
+  cd FlatCAM-8.5
+  sh setup_ubuntu.sh
+  python FlatCAM.py
   ```
 * [EZCAD](https://www.litlaser.com/ezcad), laser controller
 * Fiber Laser
