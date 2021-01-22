@@ -65,15 +65,15 @@ My case in Tokyo Japan :
 ## Detailed steps to make fiberPCB by KiCAD
  1. Design PCB as usual
    ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad.png)
- 1. Export Gerber Files
+ 2. Export Gerber Files
    - In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
- 1. Convert Gerber for CAM
- 1. Convert CAM for EZCAD
- 1. Cut patterns
- 1. Print solder mask
- 1. Open pads
- 1. Cut holes and contor
+ 3. Convert Gerber for CAM
+ 4. Convert CAM for EZCAD
+ 5. Cut patterns
+ 6. Print solder mask
+ 7. Open pads
+ 8. Cut holes and contor
 
 ## Detailed steps to make fiberPCB by EAGLE
 
