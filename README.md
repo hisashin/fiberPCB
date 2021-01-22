@@ -65,7 +65,7 @@ My case in Tokyo Japan :
 
 ## Detailed steps to make fiberPCB by KiCAD
  1. Design PCB as usual
-   ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad.png)
+   ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad_test01.png)
  2. Export Gerber Files
    - In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
