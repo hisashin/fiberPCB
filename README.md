@@ -20,11 +20,11 @@ Let's compare fiberPCB with alternatives.
   * Need to drill all holes and cut contor manually after etching.
   * Harmful to the environment.
 * CNC milling
-  * I had [USD2300 CNC designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
-  * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
+  * I had [$2300 CNC designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
+  * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around $30,000.
   * To cut small pitches, you cannot engrave deeply. If depth is not enough, small copper partcle may bridge the gap. I'm totally fed up with such problems.
 * Commercial PCB laser machine.
-  * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
+  * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over $100,000.
 * CO2 Laser
   * I've never tried CO2 laser etching. Please send pull request if you can compare.
   * Cannot etch metal without spraying black.
