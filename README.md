@@ -10,7 +10,7 @@
 
 ## Why fiberPCB?
 
-Let's compare fiberPCB to alternatives.
+Let's compare fiberPCB with alternatives.
 
 * Online PCB service
   * Best way as long as you can wait delivery for few days to weeks.
@@ -20,13 +20,13 @@ Let's compare fiberPCB to alternatives.
   * Need to drill all holes and cut contor manually after etching.
   * Harmful to the environment.
 * CNC milling
-  * I had [USD2300 CNC designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
-  * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
+  * I had [$2300 CNC designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
+  * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around $30,000.
   * To cut small pitches, you cannot engrave deeply. If depth is not enough, small copper partcle may bridge the gap. I'm totally fed up with such problems.
 * Commercial PCB laser machine.
-  * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
+  * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over $100,000.
 * CO2 Laser
-  * I don't have enough experiment with CO2 laser etching. Please send pull request if you can compare.
+  * I've never tried CO2 laser etching. Please send pull request if you can compare.
   * Cannot etch metal without spraying black.
   * Focal diameter is 100 times larger and edge might be unclear at small pitches.
   
@@ -36,9 +36,10 @@ Let's compare fiberPCB to alternatives.
  
 ## All required tools and expendables
 * Gerber Files (Free)
-* [FlatCAM](http://flatcam.org/), Gerver->CAM convet software (Free)
-  Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx).
-* [EZCAD](https://www.litlaser.com/ezcad), laser controller software (Free)
+* [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
+  - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
+  - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7 so I prefer to run [Docker](https://hub.docker.com/r/pci06/flatcam) on Linux instead.
+* [EZCAD](https://www.litlaser.com/ezcad), laser controller
 * Fiber Laser
 * Laminator
 * UV illuminator
@@ -51,7 +52,7 @@ My case in Tokyo Japan :
 | ------------------- |:-------------:| ------------:| ------------:|
 | [Fiber Laser](https://www.aliexpress.com/item/32974751052.html?spm=a2g0s.9042311.0.0.65f44c4dIleBKp&fbclid=IwAR10NMvGiH47895B0QpRRJNL5SNHvLvtUy33UhqqUZfuPdR8BVw_eg-WCHc)         | $1,837.44     | $249.81 | 20W JPT 200x200mm DHL8-16days |
 | [Laminator](https://www.lami-corporation.co.jp/archives/products/leon13dx/)           | $10.64        | $11.12       | Got $1800 worth one as junk. Replaced blown fuse:wink: |
-| [UV illuminator](https://www.amazon.co.jp/gp/product/B07HFRDK3V/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1&fbclid=IwAR2NO4W7daOl4TgFSwwDDsZGD15Jek28WylPpzhUsRBBjHX5G8EQiuQLUwU)      | $4.73         | $0           | |
+| [UV illuminator](https://www.amazon.co.jp/gp/product/B07HFRDK3V/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1&fbclid=IwAR2NO4W7daOl4TgFSwwDDsZGD15Jek28WylPpzhUsRBBjHX5G8EQiuQLUwU)      | $4.73         | $0           | I will line them up for larger PCB |
 | [Dry film](https://www.amazon.co.jp/gp/product/B01NCS88LU/ref=ppx_yo_dt_b_asin_title_o05_s01?ie=UTF8&psc=1&fbclid=IwAR3ORckfPM1z7tKVWN8LTQ-CgsBqjpBLfcwR8V2A0jhZy2ZhwNkz0N1GbfY)          | $19.15        | $0           | VANTIYAUS Zp00088(5m x 30cm) |
 | [FR-4](https://www.sengoku.co.jp/mod/sgk_cart/detail.php?code=EEHD-4BPE)                | $1.64         | $0           | 1.6t x 75 x 100mm |
 | Total               | $1873.6       | $260.93      |  $2395.46 include shippings |
