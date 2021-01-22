@@ -5,7 +5,8 @@
 - [All required tools and expendables](#all-required-tools-and-expendables)
 - [How to choose fiber laser](#how-to-choose-fiber-laser)
 - [How to choose laminator](#how-to-choose-laminator)
-- [Detailed steps to make fiberPCB](#detailed-steps-to-make-fiberPCB)
+- [Detailed steps to make fiberPCB by KiCAD](#detailed-steps-to-make-fiberPCB-by-KiCAD)
+- [Detailed steps to make fiberPCB by EAGLE](#detailed-steps-to-make-fiberPCB-by-EAGLE)
 
 ## Why fiberPCB?
 
@@ -61,15 +62,12 @@ My case in Tokyo Japan :
 ## How to choose laminator
  * List confirmed to support 1.6mm thickness
 
-## Detailed steps to make fiberPCB
+## Detailed steps to make fiberPCB by KiCAD
  1. Design PCB as usual
- ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad.png)
+  ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad.png)
  1. Export Gerber Files
- 
-   ### KiCAD
-   In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
-   ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
- 
+  In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
+  ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
  1. Convert Gerber for CAM
  1. Convert CAM for EZCAD
  1. Cut patterns
@@ -77,5 +75,6 @@ My case in Tokyo Japan :
  1. Open pads
  1. Cut holes and contor
 
+## Detailed steps to make fiberPCB by EAGLE
 
-
+// TODO
