@@ -15,8 +15,9 @@ Let's compare fiberPCB to alternatives.
   * Best way as long as you can wait delivery for few days to weeks.
   * Sometimes you cannot wait. In my case, PCB of [opensource Realtime PCR](https://github.com/hisashin/Ninja-qPCR) was so complex that I have to iterate orders to integrate after confirming each functions like LED control, photosensing, multiplexing and ADC.
 * Chemical etching
-  * Cheap but need skills for small pitches like 10 mil (0.25mm). Harmful to the environment.
-  * Need to drill all holes and cut contor manually after etching. There are more than 100 holes on my PCB.
+  * Cheap but need skills for small pitches like 10 mil (0.25mm).
+  * Need to drill all holes and cut contor manually after etching.
+  * Harmful to the environment.
 * CNC milling
   * I had [USD2300 CNC designed for PCB millling](https://www.youtube.com/watch?v=cwREOBL9E-A) and noticed that required time and cares are proportionate to the complexity of the pattern.
   * You must replace end mills not to cut holes and contor after cutting patterns. Or you have to replace it every 50 meter stroke. Machine with auto tool changer is expensive. [LPKF ProtoMat S104](https://www.youtube.com/watch?v=GRow5AqFxZA) is around USD30,000.
@@ -24,8 +25,9 @@ Let's compare fiberPCB to alternatives.
 * Commercial PCB laser machine.
   * Ridiculously expensive. "Entry model" [LPKF Photolaser ST](https://www.youtube.com/watch?v=WMgXvRwbaLw) is over USD100,000.
 * CO2 Laser
+  * I don't have enough experiment with CO2 laser etching. Please send pull request if you can compare.
   * Cannot etch metal without spraying black.
-  * Focal diameter is 100 times larger and its edge is not clear for small pitches.
+  * Focal diameter is 100 times larger and edge might be unclear at small pitches.
   
 ## Useful References
 * [Making fine pitch PCB prototypes with fiber laser](https://www.kurokesu.com/main/2021/01/07/making-fine-pitch-pcb-prototypes-with-fiber-laser/?fbclid=IwAR3_8MipkpVS9d9DjpUQ1I7AqjXdvbW7uQoy86yiT56GoPLZ7w0Zegjyjy0)
