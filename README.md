@@ -68,6 +68,8 @@ My case in Tokyo Japan :
  2. Export Gerber Files
    - In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
+   - Click \[Generate Drill Files...\] -> Click \[Generate Drill File\]
+   ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_drl.png)
  3. Convert Gerber for CAM
  4. Convert CAM for EZCAD
  5. Cut patterns
