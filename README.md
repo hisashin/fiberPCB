@@ -66,9 +66,9 @@ My case in Tokyo Japan :
  ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad.png)
  1. Export Gerber Files
  
- ### KiCAD
- In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
- ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
+   ### KiCAD
+   In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
+   ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
  
  1. Convert Gerber for CAM
  1. Convert CAM for EZCAD
