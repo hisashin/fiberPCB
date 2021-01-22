@@ -1,0 +1,329 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L fiberPCB:TC7WZ08FK U1
+U 1 1 600A26C5
+P 4100 3750
+F 0 "U1" H 4100 3975 50  0000 C CNN
+F 1 "TC7WZ08FK" H 4100 3884 50  0000 C CNN
+F 2 "fiberPCB:SOP50P310X90-8N" H 4200 3550 50  0001 C CNN
+F 3 "" H 4200 3550 50  0001 C CNN
+	1    4100 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Barrel_Jack_Switch J1
+U 1 1 600A2E86
+P 2000 3000
+F 0 "J1" H 2057 3317 50  0000 C CNN
+F 1 "Barrel_Jack_Switch" H 2057 3226 50  0000 C CNN
+F 2 "Connector_BarrelJack:BarrelJack_Horizontal" H 2050 2960 50  0001 C CNN
+F 3 "~" H 2050 2960 50  0001 C CNN
+	1    2000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D1
+U 1 1 600A4A16
+P 4800 3100
+F 0 "D1" V 4839 2982 50  0000 R CNN
+F 1 "LED" V 4748 2982 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 4800 3100 50  0001 C CNN
+F 3 "~" H 4800 3100 50  0001 C CNN
+	1    4800 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R5
+U 1 1 600A522F
+P 4800 3500
+F 0 "R5" H 4870 3546 50  0000 L CNN
+F 1 "R" H 4870 3455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 4730 3500 50  0001 C CNN
+F 3 "~" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP4
+U 1 1 600A574A
+P 3600 3250
+F 0 "JP4" V 3554 3377 50  0000 L CNN
+F 1 "Jumper" V 3645 3377 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_TrianglePad1.0x1.5mm" H 3600 3250 50  0001 C CNN
+F 3 "~" H 3600 3250 50  0001 C CNN
+	1    3600 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP3
+U 1 1 600A5FA7
+P 3300 3250
+F 0 "JP3" V 3254 3377 50  0000 L CNN
+F 1 "Jumper" V 3345 3377 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3300 3250 50  0001 C CNN
+F 3 "~" H 3300 3250 50  0001 C CNN
+	1    3300 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 600A6CAF
+P 2450 3200
+F 0 "#PWR0101" H 2450 2950 50  0001 C CNN
+F 1 "GND" H 2455 3027 50  0000 C CNN
+F 2 "" H 2450 3200 50  0001 C CNN
+F 3 "" H 2450 3200 50  0001 C CNN
+	1    2450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 3100 2450 3100
+Wire Wire Line
+	2450 3100 2450 3200
+$Comp
+L Device:Jumper JP2
+U 1 1 600AA382
+P 3000 3250
+F 0 "JP2" V 2954 3377 50  0000 L CNN
+F 1 "Jumper" V 3045 3377 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 3000 3250 50  0001 C CNN
+F 3 "~" H 3000 3250 50  0001 C CNN
+	1    3000 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Jumper JP1
+U 1 1 600AA38C
+P 2700 3250
+F 0 "JP1" V 2654 3377 50  0000 L CNN
+F 1 "Jumper" V 2745 3377 50  0000 L CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 2700 3250 50  0001 C CNN
+F 3 "~" H 2700 3250 50  0001 C CNN
+	1    2700 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 600B3552
+P 5150 3100
+F 0 "D2" V 5189 2982 50  0000 R CNN
+F 1 "LED" V 5098 2982 50  0000 R CNN
+F 2 "LEDs:LED_D5.0mm" H 5150 3100 50  0001 C CNN
+F 3 "~" H 5150 3100 50  0001 C CNN
+	1    5150 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 600B355C
+P 5150 3500
+F 0 "R6" H 5220 3546 50  0000 L CNN
+F 1 "R" H 5220 3455 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 5080 3500 50  0001 C CNN
+F 3 "~" H 5150 3500 50  0001 C CNN
+	1    5150 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 600B44F6
+P 4600 4150
+F 0 "#PWR0102" H 4600 3900 50  0001 C CNN
+F 1 "GND" H 4605 3977 50  0000 C CNN
+F 2 "" H 4600 4150 50  0001 C CNN
+F 3 "" H 4600 4150 50  0001 C CNN
+	1    4600 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0103
+U 1 1 600B496F
+P 4600 3650
+F 0 "#PWR0103" H 4600 3500 50  0001 C CNN
+F 1 "VCC" H 4615 3823 50  0000 C CNN
+F 2 "" H 4600 3650 50  0001 C CNN
+F 3 "" H 4600 3650 50  0001 C CNN
+	1    4600 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 3750 4600 3750
+Wire Wire Line
+	4600 3750 4600 3650
+Wire Wire Line
+	4500 4050 4600 4050
+Wire Wire Line
+	4600 4050 4600 4150
+$Comp
+L power:GND #PWR0104
+U 1 1 600C0115
+P 2700 4700
+F 0 "#PWR0104" H 2700 4450 50  0001 C CNN
+F 1 "GND" H 2705 4527 50  0000 C CNN
+F 2 "" H 2700 4700 50  0001 C CNN
+F 3 "" H 2700 4700 50  0001 C CNN
+	1    2700 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 600A3A8C
+P 3600 4350
+F 0 "R4" H 3670 4396 50  0000 L CNN
+F 1 "R" H 3670 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3530 4350 50  0001 C CNN
+F 3 "~" H 3600 4350 50  0001 C CNN
+	1    3600 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 600A416F
+P 3300 4350
+F 0 "R3" H 3370 4396 50  0000 L CNN
+F 1 "R" H 3370 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 3230 4350 50  0001 C CNN
+F 3 "~" H 3300 4350 50  0001 C CNN
+	1    3300 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 600AA36E
+P 3000 4350
+F 0 "R2" H 3070 4396 50  0000 L CNN
+F 1 "R" H 3070 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 2930 4350 50  0001 C CNN
+F 3 "~" H 3000 4350 50  0001 C CNN
+	1    3000 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 600AA378
+P 2700 4350
+F 0 "R1" H 2770 4396 50  0000 L CNN
+F 1 "R" H 2770 4305 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603" V 2630 4350 50  0001 C CNN
+F 3 "~" H 2700 4350 50  0001 C CNN
+	1    2700 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2950 3600 2900
+Wire Wire Line
+	3600 2900 3300 2900
+Wire Wire Line
+	2700 2900 2700 2950
+Wire Wire Line
+	2700 2800 2700 2900
+Connection ~ 2700 2900
+Wire Wire Line
+	3000 2950 3000 2900
+Connection ~ 3000 2900
+Wire Wire Line
+	3000 2900 2700 2900
+Wire Wire Line
+	3300 2950 3300 2900
+Connection ~ 3300 2900
+Wire Wire Line
+	3300 2900 3000 2900
+Wire Wire Line
+	2700 4200 2700 4050
+Wire Wire Line
+	3000 4200 3000 3950
+Wire Wire Line
+	3300 4200 3300 3850
+Wire Wire Line
+	3600 4200 3600 3750
+Wire Wire Line
+	3700 4050 2700 4050
+Connection ~ 2700 4050
+Wire Wire Line
+	2700 4050 2700 3550
+Wire Wire Line
+	3700 3950 3000 3950
+Connection ~ 3000 3950
+Wire Wire Line
+	3000 3950 3000 3550
+Wire Wire Line
+	3700 3850 3300 3850
+Connection ~ 3300 3850
+Wire Wire Line
+	3300 3850 3300 3550
+Wire Wire Line
+	3700 3750 3600 3750
+Connection ~ 3600 3750
+Wire Wire Line
+	3600 3750 3600 3550
+Wire Wire Line
+	3600 4600 3300 4600
+Wire Wire Line
+	2700 4600 2700 4500
+Wire Wire Line
+	3600 4500 3600 4600
+Wire Wire Line
+	3000 4500 3000 4600
+Connection ~ 3000 4600
+Wire Wire Line
+	3000 4600 2700 4600
+Wire Wire Line
+	3300 4500 3300 4600
+Connection ~ 3300 4600
+Wire Wire Line
+	3300 4600 3000 4600
+Wire Wire Line
+	2700 4700 2700 4600
+Connection ~ 2700 4600
+Wire Wire Line
+	4500 3850 4800 3850
+Wire Wire Line
+	4800 3850 4800 3650
+Wire Wire Line
+	4500 3950 5150 3950
+Wire Wire Line
+	5150 3950 5150 3650
+Wire Wire Line
+	5150 2950 5150 2900
+Wire Wire Line
+	5150 2900 4800 2900
+Connection ~ 3600 2900
+Wire Wire Line
+	4800 2950 4800 2900
+Connection ~ 4800 2900
+Wire Wire Line
+	4800 2900 3600 2900
+Wire Wire Line
+	4800 3250 4800 3350
+Wire Wire Line
+	5150 3250 5150 3350
+$Comp
+L power:VCC #PWR0105
+U 1 1 600BFA16
+P 2700 2800
+F 0 "#PWR0105" H 2700 2650 50  0001 C CNN
+F 1 "VCC" H 2715 2973 50  0000 C CNN
+F 2 "" H 2700 2800 50  0001 C CNN
+F 3 "" H 2700 2800 50  0001 C CNN
+	1    2700 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2300 2900 2700 2900
+Text Notes 1750 2600 0    50   ~ 0
+Up to 6V as VCC
+$EndSCHEMATC
