@@ -88,6 +88,8 @@ My case in Tokyo Japan :
    - Click \[Generate Drill Files...\] -> Click \[Generate Drill File\]
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_drl.png)
  3. Convert Gerber for CAM
+   - Click \[File > Open Gerbers\] and select all gerbers exported at prior step.
+   ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step3_open_gerbers.png)
  4. Convert CAM for EZCAD
  5. Cut patterns
  6. Print solder mask
