@@ -46,7 +46,7 @@ Let's compare fiberPCB with alternatives.
   ```
   Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
   
-  - to install flatcam3.5 (Python2)
+  - to install FlatCAM 8.5 (Python2)
   ```
   apt-get -y update
   apt-get -y install sudo wget git
@@ -58,7 +58,7 @@ Let's compare fiberPCB with alternatives.
   sh setup_ubuntu.sh
   python FlatCAM.py
   ```
-  - to install nightly build like flatcam beta 8.994 (Python3)
+  - to install nightly build (Python3)
   ```
   python3 -V
   // It was 3.5 for me and upgrade to 3.8 was needed in later step. skip here if yours is 3.8
