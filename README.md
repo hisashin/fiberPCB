@@ -41,7 +41,7 @@ Let's compare fiberPCB with alternatives.
   Latest stable FlatCAM3.5 needs Python2.7. Beta supports Python3 but crush often on Linux. [Pip](https://pypi.org/project/flatcam/#description) install looks easy but crushed while saving projects. I recommend to use Windows or Docker Ubuntu Desktop.
   
   - [Download](https://bitbucket.org/jpcgt/flatcam/downloads/) latest installer for Windows.
-  - [dorowu/ubuntu-desktop-lxde-vnc:release-v1.2](https://hub.docker.com/layers/dorowu/ubuntu-desktop-lxde-vnc/release-v1.2/images/sha256-54af3af44929d8337562448a122f32ce3ba35d8ae9aefe1365f1660d84b1792a?context=explore) is easiest.
+  - For Linux, [dorowu/ubuntu-desktop-lxde-vnc:release-v1.2](https://hub.docker.com/layers/dorowu/ubuntu-desktop-lxde-vnc/release-v1.2/images/sha256-54af3af44929d8337562448a122f32ce3ba35d8ae9aefe1365f1660d84b1792a?context=explore) is easiest.
   
    ```
    // Run this command in your terminal
