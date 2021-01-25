@@ -108,10 +108,10 @@ My case in Tokyo Japan :
 | Total               | $1873.6       | $260.93      |  $2395.46 include shippings |
 
 ## How to choose fiber laser
- * Stronger/Wider is not always better
+ // TODO Stronger/Wider is not always better
 
 ## How to choose laminator
- * List confirmed to support 1.6mm thickness
+ // TODO List confirmed to support 1.6mm thickness
 
 ## Detailed steps to make fiberPCB by KiCAD
  1. Design PCB as usual
@@ -121,10 +121,10 @@ My case in Tokyo Japan :
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
    - Click \[Generate Drill Files...\] -> Click \[Generate Drill File\]
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_drl.png)
- 3. Convert Gerber for CAM
+ 3. Convert Gerber
    - Click \[File > Open Gerbers\] and select all gerbers exported at prior step.
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step3_open_gerbers.png)
- 4. Convert CAM for EZCAD
+ 4. Convert CAM
  5. Cut patterns
  6. Print solder mask
  7. Open pads
