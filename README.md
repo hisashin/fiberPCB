@@ -38,12 +38,58 @@ Let's compare fiberPCB with alternatives.
 * Gerber Files (Free)
 * [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
-  - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7. [Pip install](https://pypi.org/project/flatcam/#description) crush when saving projects. so I recommend to setup in [Docker Ubuntu Desktop](https://github.com/queeno/docker-ubuntu-desktop).
+  - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7. [Pip install](https://pypi.org/project/flatcam/#description) crush when saving projects. so I recommend to setup with Docker.
+  
+  
+  
+  
+  - I tried [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/) but I couldn't install python-qt4. Here is log.
+  ```
+  docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+  // My case
+  docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
+  ```
+  
+  Browse [http://127.0.0.1:6080/](http://127.0.0.1:6080/), launch xterm then run these commands.
+  
+  - to install FlatCAM 8.5 (Python2)
+  ```
+  python -V (3.8.2)
+  // It was 3.5 for me and 2 was needed in later step. skip here if yours is 2
+  apt -y update
+  apt upgrade
+  apt -y install python2.7
+  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
+  python2.7 get-pip.py
+  pip -V
+  
+  apt-get -y install unzip
+  wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
+  unzip FlatCAM-8.5.zip
+  cd FlatCAM-8.5
+  sh setup_ubuntu.sh
+  
+  // Unable to locate package python-qt4
+  add-apt-repository ppa:rock-core/qt4
+  apt update
+  apt install libqt4-declarative libqt4* libqtcore4 libqtgui4 libqtwebkit4 qt4*  
+  // Unable to locate package scipy
+  // Unable to locate package matplotlib
+  python2.7 -m pip install --user numpy scipy matplotlib
+  // Unable to locate package python-shapely
+  // Unable to locate package python-pip
+  
+  python FlatCAM.py
+  ```
+  
+  I also tried [queeno/docker-ubuntu-desktop](https://github.com/queeno/docker-ubuntu-desktop). It worked and easier but resolution of app was lowest and couldn't find way to change it. Anyway here is my log.
+  
   ```
   docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
   // My case
   docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
   ```
+  
   Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
   
   - to install FlatCAM 8.5 (Python2)
@@ -60,7 +106,7 @@ Let's compare fiberPCB with alternatives.
   ```
   - to install nightly build (Python3)
   ```
-  python3 -V
+  python3 -V (3.5)
   // It was 3.5 for me and upgrade to 3.8 was needed in later step. skip here if yours is 3.8
   add-apt-repository ppa:deadsnakes/ppa
   apt-get -y update
