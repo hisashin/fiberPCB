@@ -45,15 +45,43 @@ Let's compare fiberPCB with alternatives.
   docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
   ```
   Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
+  
+  - to install flatcam3.5 (Python2)
   ```
-  apt-get update
-  apt-get -y install git sudo wget
-  //git clone https://bitbucket.org/jpcgt/flatcam <- latest one has different file structure
+  apt-get -y update
+  apt-get -y install sudo wget git
+   
+  //git clone https://bitbucket.org/jpcgt/flatcam <- it was also 3.5 when I tried at 2021 Jan 25
   wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
   unzip FlatCAM-8.5.zip
   cd FlatCAM-8.5
   sh setup_ubuntu.sh
   python FlatCAM.py
+  ```
+  - to install nightly build like flatcam beta 8.994 (Python3)
+  ```
+  python3 -V
+  // It was 3.5 for me and upgrade to 3.8 was needed in later step. skip here if yours is 3.8
+  add-apt-repository ppa:deadsnakes/ppa
+  apt-get -y update
+  apt-get -y install python3.8
+  update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+  update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+  update-alternatives --config python3 (Choose python3.8)
+  python3 -V
+  apt install -y python3.8-distutils python-setuptools python3-pip
+  pip3 -V (8.1.1)
+  apt remove python3-pip
+  python3.8 -m easy_install pip
+  pip -V (21.0)
+
+  apt-get -y update
+  apt-get -y install python3-pip python-setuptools sudo wget
+  wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM_beta_8.994_sources.zip
+  unzip FlatCAM_beta_8.994_sources.zip
+  cd FlatCAM_beta_8.994_sources
+  sh setup_ubuntu.sh
+  python3 FlatCAM.py
   ```
 * [EZCAD](https://www.litlaser.com/ezcad), laser controller
 * Fiber Laser
