@@ -61,8 +61,8 @@ Let's compare fiberPCB with alternatives.
    ```
 
   - [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/):latest --- I couldn't install python-qt4.
-  - [queeno/docker-ubuntu-desktop](https://github.com/queeno/docker-ubuntu-desktop):latest. It worked but resolution was lowest.
-  - Want to try nightly build FlatCAM in Python3? Here is what to do.
+  - [queeno/docker-ubuntu-desktop](https://github.com/queeno/docker-ubuntu-desktop):latest. --- It worked but app resolution was lowest.
+  - Want to try FlatCAM nightly build in Python3? Here is how to install.
   
    ```
    python3 -V (3.5)
