@@ -117,12 +117,12 @@ My case in Tokyo Japan :
  1. Design PCB as usual
    ![Step1](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step1_design_pcb_kicad_test01.png)
  2. Export Gerber Files
-   - In Pcbnew, Select \[File > Plot\] -> Check F.Cu, F.Paste, F.Mask and Edge.Cuts -> Click \[Plot\]
+   - **File/Plot** and check F.Cu, F.Paste, F.Mask and Edge.Cuts then **Plot**
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_gerber_kicad.png.png)
-   - Click \[Generate Drill Files...\] -> Click \[Generate Drill File\]
+   - **Generate Drill Files... / Generate Drill File**
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step2_export_drl.png)
  3. Convert Gerber
-   - Click \[File > Open Gerbers\] and select all gerbers exported at prior step.
+   - **File / Open Gerbers** and select all gerbers exported at prior step.
    ![Step2](https://raw.githubusercontent.com/hisashin/fiberPCB/main/images/step3_open_gerbers.png)
  4. Convert CAM
  5. Cut patterns
