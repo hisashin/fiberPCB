@@ -1,8 +1,8 @@
 # Getting started with fiberPCB, Fiber Laser DIY PCB
 
 - [Why fiberPCB?](#why-fiberPCB?)
-- [Useful References](#useful-references)
-- [All required tools and expendables](#all-required-tools-and-expendables)
+- [References](#references)
+- [Required tools and materials](#all-required-tools-and-materials)
 - [How to choose fiber laser](#how-to-choose-fiber-laser)
 - [How to choose laminator](#how-to-choose-laminator)
 - [Detailed steps to make fiberPCB by KiCAD](#detailed-steps-to-make-fiberPCB-by-KiCAD)
@@ -30,11 +30,11 @@ Let's compare fiberPCB with alternatives.
   * Cannot etch metal without spraying black.
   * Focal diameter is 100 times larger and edge might be unclear at small pitches.
   
-## Useful References
+## References
 * [Making fine pitch PCB prototypes with fiber laser](https://www.kurokesu.com/main/2021/01/07/making-fine-pitch-pcb-prototypes-with-fiber-laser/?fbclid=IwAR3_8MipkpVS9d9DjpUQ1I7AqjXdvbW7uQoy86yiT56GoPLZ7w0Zegjyjy0)
 * [Youtubes](https://www.youtube.com/playlist?list=PLIcr1mnww28Doh5sBvfblVOn0Wxk1qtYr)
  
-## All required tools and expendables
+## All required tools and materials
 * Gerber Files (Free)
 * [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
