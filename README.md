@@ -38,97 +38,59 @@ Let's compare fiberPCB with alternatives.
 * Gerber Files (Free)
 * [FlatCAM](http://flatcam.org/), Gerver->CAM conveter
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
-  - [It requires a lot](http://flatcam.org/manual/installation.html#requirements) including dead Python2.7. [Pip install](https://pypi.org/project/flatcam/#description) crush when saving projects. so I recommend to setup with Docker.
+  - Latest stable FlatCAM3.5 needs Python2.7. Nightly builds support Python3 but crush often. [Pip](https://pypi.org/project/flatcam/#description) install looks easy but crushed while saving projects. I recommend Docker Ubuntu Desktop.
   
+  - My conclusion is [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/):release-v1.2
   
-  
-  
-  - I tried [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/) but I couldn't install python-qt4. Here is log.
-  ```
-  docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
-  // My case
-  docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 6080:80 -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc
-  ```
-  
-  Browse [http://127.0.0.1:6080/](http://127.0.0.1:6080/), launch xterm then run these commands.
-  
-  - to install FlatCAM 8.5 (Python2)
-  ```
-  python -V (3.8.2)
-  // It was 3.5 for me and 2 was needed in later step. skip here if yours is 2
-  apt -y update
-  apt upgrade
-  apt -y install python2.7
-  curl https://bootstrap.pypa.io/2.7/get-pip.py --output get-pip.py
-  python2.7 get-pip.py
-  pip -V
-  
-  apt-get -y install unzip
-  wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
-  unzip FlatCAM-8.5.zip
-  cd FlatCAM-8.5
-  sh setup_ubuntu.sh
-  
-  // Unable to locate package python-qt4
-  add-apt-repository ppa:rock-core/qt4
-  apt update
-  apt install libqt4-declarative libqt4* libqtcore4 libqtgui4 libqtwebkit4 qt4*  
-  // Unable to locate package scipy
-  // Unable to locate package matplotlib
-  python2.7 -m pip install --user numpy scipy matplotlib
-  // Unable to locate package python-shapely
-  // Unable to locate package python-pip
-  
-  python FlatCAM.py
-  ```
-  
-  I also tried [queeno/docker-ubuntu-desktop](https://github.com/queeno/docker-ubuntu-desktop). It worked and easier but resolution of app was lowest and couldn't find way to change it. Anyway here is my log.
-  
-  ```
-  docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
-  // My case
-  docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 5901:5901 queeno/ubuntu-desktop
-  ```
-  
-  Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
-  
-  - to install FlatCAM 8.5 (Python2)
-  ```
-  apt-get -y update
-  apt-get -y install sudo wget git
+   ```
+   docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
+   // My case
+   docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
+   ```
    
-  //git clone https://bitbucket.org/jpcgt/flatcam <- it was also 3.5 when I tried at 2021 Jan 25
-  wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
-  unzip FlatCAM-8.5.zip
-  cd FlatCAM-8.5
-  sh setup_ubuntu.sh
-  python FlatCAM.py
-  ```
-  - to install nightly build (Python3)
-  ```
-  python3 -V (3.5)
-  // It was 3.5 for me and upgrade to 3.8 was needed in later step. skip here if yours is 3.8
-  add-apt-repository ppa:deadsnakes/ppa
-  apt-get -y update
-  apt-get -y install python3.8
-  update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
-  update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
-  update-alternatives --config python3 (Choose python3.8)
-  python3 -V
-  apt install -y python3.8-distutils python-setuptools python3-pip
-  pip3 -V (8.1.1)
-  apt remove python3-pip
-  python3.8 -m easy_install pip
-  pip -V (21.0)
+   Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
+    
+   ```
+   apt-get -y update
+   apt-get -y install sudo wget git unzip
+    
+   //git clone https://bitbucket.org/jpcgt/flatcam <- it was also 3.5 when I tried at 2021 Jan 25
+   wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
+   unzip FlatCAM-8.5.zip
+   cd FlatCAM-8.5
+   sh setup_ubuntu.sh
+   python FlatCAM.py
+   ```
 
-  apt-get -y update
-  apt-get -y install python3-pip python-setuptools sudo wget
-  wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM_beta_8.994_sources.zip
-  unzip FlatCAM_beta_8.994_sources.zip
-  cd FlatCAM_beta_8.994_sources
-  sh setup_ubuntu.sh
-  python3 FlatCAM.py
-  ```
+  - [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/):latest --- I couldn't install python-qt4.
+  - [queeno/docker-ubuntu-desktop](https://github.com/queeno/docker-ubuntu-desktop):latest. It worked but resolution was lowest.
+  - Want to install nightly build FlatCAM to Python3? Here is log
+  
+   ```
+   python3 -V (3.5)
+   // It was 3.5 for me and upgrade to 3.8 was needed in later step. skip here if yours is 3.8
+   add-apt-repository ppa:deadsnakes/ppa
+   apt-get -y update
+   apt-get -y install python3.8
+   update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.5 1
+   update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 2
+   update-alternatives --config python3 (Choose python3.8)
+   python3 -V
+   apt install -y python3.8-distutils python-setuptools python3-pip
+   pip3 -V (8.1.1)
+   apt remove python3-pip
+   python3.8 -m easy_install pip
+   pip -V (21.0)
+ 
+   apt-get -y update
+   apt-get -y install python3-pip python-setuptools sudo wget
+   wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM_beta_8.994_sources.zip
+   unzip FlatCAM_beta_8.994_sources.zip
+   cd FlatCAM_beta_8.994_sources
+   sh setup_ubuntu.sh
+   python3 FlatCAM.py
+   ```
+   
 * [EZCAD](https://www.litlaser.com/ezcad), laser controller
 * Fiber Laser
 * Laminator
