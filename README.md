@@ -44,7 +44,7 @@ Let's compare fiberPCB with alternatives.
   
    ```
    // Run this command in your terminal
-   docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
+   docker run -d -v (where you exported gerbers):/gerbers -v (somewhere to save flatcam projects):/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
    // My case
    docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
    
