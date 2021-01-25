@@ -40,21 +40,19 @@ Let's compare fiberPCB with alternatives.
   - Installation guide for [Win](http://flatcam.org/manual/installation.html#windows), [Linux](http://flatcam.org/manual/installation.html#linux) and [OS-X](http://flatcam.org/manual/installation.html#osx). 
   - Latest stable FlatCAM3.5 needs Python2.7. Nightly builds support Python3 but crush often. [Pip](https://pypi.org/project/flatcam/#description) install looks easy but crushed while saving projects. I recommend Docker Ubuntu Desktop.
   
-  - My conclusion is [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/):release-v1.2
+  - [dorowu/ubuntu-desktop-lxde-vnc:release-v1.2](https://hub.docker.com/layers/dorowu/ubuntu-desktop-lxde-vnc/release-v1.2/images/sha256-54af3af44929d8337562448a122f32ce3ba35d8ae9aefe1365f1660d84b1792a?context=explore) is easiest.
   
    ```
+   // Run this command in your terminal
    docker run -d -v (somewheare gerber exists):/gerbers -v (somewheare for flatcam projects):/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
    // My case
    docker run -d -v ~/github/fiberPCB/kicad/fiberPCB:/gerbers -v ~/github/fiberPCB/flatcam:/projects -it --name flatcam -p 6080:80 -p 5901:5900  -e VNC_PASSWORD=password -v /dev/shm:/dev/shm dorowu/ubuntu-desktop-lxde-vnc:release-v1.2
-   ```
    
-   Connect VNC to vnc://localhost:5901, launch xterm then run these commands.
-    
-   ```
+   // Connect VNC to vnc://localhost:5901, run these commands in Ubuntu terminal not yours.
    apt-get -y update
    apt-get -y install sudo wget git unzip
     
-   //git clone https://bitbucket.org/jpcgt/flatcam <- it was also 3.5 when I tried at 2021 Jan 25
+   //git clone https://bitbucket.org/jpcgt/flatcam <- it was also 3.5 when I tried on 2021 Jan 25
    wget https://bitbucket.org/jpcgt/flatcam/downloads/FlatCAM-8.5.zip
    unzip FlatCAM-8.5.zip
    cd FlatCAM-8.5
@@ -64,7 +62,7 @@ Let's compare fiberPCB with alternatives.
 
   - [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/):latest --- I couldn't install python-qt4.
   - [queeno/docker-ubuntu-desktop](https://github.com/queeno/docker-ubuntu-desktop):latest. It worked but resolution was lowest.
-  - Want to install nightly build FlatCAM to Python3? Here is log
+  - Want to try nightly build FlatCAM in Python3? Here is what to do.
   
    ```
    python3 -V (3.5)
